@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/normalize.css" />
+    <link rel="stylesheet" href="./src/main.css" />
+    <title>Restaurante pozzo</title>
+
+    <script src="https://kit.fontawesome.com/a3ce1c51e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <h1 class="navbar__logo">Restaurant d'Pozzo</h1>
+        <div class="navbar__menu"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+      <div class="navbar__menu__movil">
+        <ul class="navbar__menu__movil__list">
+          <li>menú</li>
+          <li>Nosotros</li>
+          <li>Chef</li>
+          <li>Contacto</li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__overlay">
+        <p class="bienvenido">Bienvenido!</p>
+        <span class="bienvenido_span"
+          >disfrute de las mejores comidas italianas hechas por italianos</span
+        >
+        <a class="hero__button" href=""><i class="fa-solid fa-bars"></i>Nuestro Menu</a>
+      </div>
+      <video src="./src/assets/videos/bg_video.mp4" autoplay muted loop></video>
+    </section>
+
+    <section class="container welcome" data-aos-anchor-placement="top-bottom">
+      <div class="welcome__info">
+        <h2>Bienvenidos a</h2>
+        <h1>Restaurante d'pozzo</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis sunt repellendus
+          obcaecati. Eligendi facilis itaque fugit pariatur ad repudiandae, reiciendis ratione
+          consectetur dignissimos. Officia!
+        </p>
+        <a class="welcome__info__link" href="">Contactar</a>
+      </div>
+      <div class="welcome__imagenes">
+        <picture
+          class="imagen_nosotros"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <source data-src="./src/assets/imgs/nosotros1.webp" type="" />
+          <img data-src="./src/assets/imgs/nosotros1.jpg" alt="" />
+        </picture>
+
+        <div>
+          <picture data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+            <source class="lazzy" data-src="./src/assets/imgs/nosotros2.webp" type="" />
+            <img class="lazzy" data-src="./src/assets/imgs/nosotros2.jpg" alt="" />
+          </picture>
+          <picture data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+            <source class="lazzy" data-src="./src/assets/imgs/nosotros3.webp" type="" />
+            <img class="lazzy" data-src="./src/assets/imgs/nosotros3.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="platillos container">
+      <h2 class="platillos__titulo2">Platos Populares</h2>
+      <div class="filtro-categorias">
+        <button id="todo" class="boton active">Todos</button>
+        <button id="ensalada" class="boton">Ensaladas</button>
+        <button id="pasta" class="boton">Pastas</button>
+        <button id="postre" class="boton">Postres</button>
+        <button id="pizza" class="boton">Pizzas</button>
+      </div>
+      `
+      <div class="platillos__platos">
+        <!-- plato -->
+
+        <div id="ensalada" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="500"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/ensalada.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/ensalada.webp" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="ensalada" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/ensalada3.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/ensalada3.webp" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="ensalada" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source src="./src/assets/imgs/ensalada2.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/ensalada2.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pasta" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source class="lazzy" data-src="./src/assets/imgs/pasta1.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pasta1.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pasta" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source src="./src/assets/imgs/pasta2.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pasta2.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pasta" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/pasta3.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pasta3.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pasta" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/pasta4.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pasta4.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pizza" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/pizza1.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pizza1.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pizza" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/pizza2.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pizza2.webp" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="pizza" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/pizza3.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/pizza3.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="postre" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/postres1.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/postres1.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="postre" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/postres2.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/postres2.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+        <!-- plato -->
+
+        <div id="postre" class="plato">
+          <div
+            class="plato__imagen"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <picture>
+              <source data-src="./src/assets/imgs/postres3.webp" type="" />
+              <img class="lazzy" data-src="./src/assets/imgs/postres3.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="plato__info">
+            <h4 class="plato__titulo">Nombre del plato</h4>
+            <p class="plato__descripcion">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, qui.
+            </p>
+            <div class="plato__precioBoton">
+              <p class="plato__precio">$150</p>
+              <button class="plato__button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- plato -->
+      </div>
+    </section>
+    <section class="restaurante">
+      <div class="container">
+        <h4>En <span>Restaurant d'pozzo</span> estamos esperando por ti.</h4>
+        <p>visitanos y se parte de una experiencia culinaria superior.</p>
+        <button class="boton restaurante__boton">Sobre nosotros</button>
+      </div>
+    </section>
+    <section class="chef container">
+      <div class="chef__info" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+        <h4>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ullam aliquid autem quia
+          vel exercitationem cum modi officiis similique! Repellat?
+        </h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quidem quaerat provident id
+          natus odio ex nesciunt nostrum cumque ullam, quis obcaecati, eum iusto reprehenderit
+          placeat sint eveniet modi dolorem tempore adipisci error explicabo. Veniam itaque minima
+          quis ipsum eligendi?
+        </p>
+        <button class="boton">Leer Biografia</button>
+      </div>
+      <div>
+        <picture data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+          <source data-src="./src/assets/imgs/chef.webp" />
+          <img data-src="./src/assets/imgs/chef.jpg" alt="" />
+        </picture>
+      </div>
+    </section>
+
+    <script src="./src/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
