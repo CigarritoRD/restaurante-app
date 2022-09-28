@@ -203,14 +203,15 @@ h4 {
 .welcome__imagenes picture {
   display: flex;
   flex: 0 0 calc(50% - 1rem);
-
   padding: 0.5rem;
+  gap: 0.5rem;
   justify-content: space-between;
 }
 .welcome__imagenes {
   position: relative;
 }
-.welcome__imagenes picture img {
+.welcome__imagenes img {
+  height: 100%;
   object-fit: cover;
 }
 
